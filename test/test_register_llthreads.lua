@@ -1,6 +1,6 @@
 -- Test if you build module with
 -- LLTHREAD_REGISTER_THREAD_LIBRARY
-
+package.path = package.path ..";./?.lua"
 local llthreads = require "llthreads"
 local thread = llthreads.new([[
     if not package.preload.llthreads then

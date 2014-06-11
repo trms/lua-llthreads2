@@ -1,4 +1,6 @@
+package.path = package.path ..";./?.lua"
 if jit then
+
   local llthreads = require "llthreads"
   local thread = llthreads.new([[
     if not package.preload.ffi then

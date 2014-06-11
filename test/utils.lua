@@ -1,3 +1,4 @@
+
 local lua_version_t
 local function lua_version()
   if not lua_version_t then 
@@ -35,10 +36,18 @@ LUA_INIT = [[do
 end;]]
 
 local sleep
-local status, socket = pcall(require,"socket")
+
+local status, lsleep = pcall(require, "lsleep")
+
 if status then
-  sleep = function(secs)
-    return socket.sleep(secs)
+  sleep = lsleep.sleep
+end
+
+if not status then
+
+  local status, socket = pcall(require,"socket")
+  if status then
+    sleep = socket.sleep
   end
 end
 

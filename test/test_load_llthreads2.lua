@@ -1,4 +1,4 @@
-local llthreads = require"llthreads2"
+local llthreads = require"llthreads"
 
 llthreads.new([[
   local os = require "os"

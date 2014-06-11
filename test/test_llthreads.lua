@@ -19,7 +19,7 @@
 -- THE SOFTWARE.
 
 local llthreads = require"llthreads"
-local sleep     = require"utils".sleep
+local sleep     = require"lsleep".sleep
 
 print("LLThreads version : ", llthreads._VERSION)
 

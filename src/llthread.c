@@ -181,7 +181,9 @@ static void open_thread_libs(lua_State *L){
 #endif
 
 #ifdef LLTHREAD_REGISTER_THREAD_LIBRARY
-  L_REGLIB(L, llthreads, 0);
+ lua_pushcfunction(L, luaopen_llthreads);
+ lua_setfield(L, -2, "llthreads");
+
 #endif
 
   lua_settop(L, top);

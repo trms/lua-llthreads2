@@ -21,7 +21,7 @@
 -- Sub-thread processing example in Lua using llthreads - 1,000 quick sub-thread execution
 
 -- luajit sub_threads.lua
-
+package.path = package.path ..";./?.lua"
 local llthreads = require"llthreads"
 local utils     = require "utils"
 

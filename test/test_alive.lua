@@ -1,8 +1,11 @@
+package.path = package.path ..";./?.lua"
+
 local llthreads = require"llthreads"
 local utils     = require "utils"
 local sleep     = utils.sleep
 
 local include = utils.thread_init .. [[
+package.path = package.path ..";./?.lua"
 local llthreads = require"llthreads"
 local sleep = require "utils".sleep
 ]]

@@ -1,6 +1,8 @@
+package.path = package.path ..";./?.lua"
 local utils = require "utils"
 
 require "llthreads".new(utils.thread_init .. [[
+ package.path = package.path ..";./?.lua"
 require "string"
 
 require "llthreads".set_logger(function(msg)

@@ -1,11 +1,13 @@
+package.path = package.path ..";./?.lua"
 local llthreads = require"llthreads"
 local utils     = require "utils"
 
 do
 
 local thread = llthreads.new(utils.thread_init .. [[
-  local sleep = require"utils".sleep
-  while true do sleep(1) end
+	package.path = package.path ..";./?.lua"
+	local sleep = require"utils".sleep
+	while true do sleep(1) end
 ]])
 
 -- detached + joindable
@@ -26,8 +28,9 @@ for i = 1, 10 do collectgarbage("collect") end
 do
 
 local thread = llthreads.new(utils.thread_init .. [[
-  local sleep = require"utils".sleep
-  sleep(1)
+	package.path = package.path ..";./?.lua"
+	local sleep = require"utils".sleep
+	sleep(1)
 ]])
 
 -- detached + joindable

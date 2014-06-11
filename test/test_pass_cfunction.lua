@@ -1,3 +1,4 @@
+package.path = package.path ..";./?.lua"
 local llthreads = require"llthreads"
 local utils     = require"utils"
 
