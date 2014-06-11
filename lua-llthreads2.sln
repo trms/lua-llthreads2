@@ -2,14 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua-llthreads2", "lua-llthreads2.vcxproj", "{8038790E-6CD9-980C-9B34-70DA41CFBB3C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4} = {4D837F81-114B-4BD4-B2CC-906F36D489C4}
-		{0E57878B-8F3D-4121-B720-17EF64D44471} = {0E57878B-8F3D-4121-B720-17EF64D44471}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua.DLL", "..\lua\DLL\DLL.vcxproj", "{0E57878B-8F3D-4121-B720-17EF64D44471}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mc_bootstrap", "..\..\.bootstrap\windows\mc_bootstrap\mc_bootstrap.vcxproj", "{4D837F81-114B-4BD4-B2CC-906F36D489C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,27 +24,6 @@ Global
 		{8038790E-6CD9-980C-9B34-70DA41CFBB3C}.Release|Win32.Build.0 = Release|Win32
 		{8038790E-6CD9-980C-9B34-70DA41CFBB3C}.Release|x64.ActiveCfg = Release|x64
 		{8038790E-6CD9-980C-9B34-70DA41CFBB3C}.Release|x64.Build.0 = Release|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.All|Win32.ActiveCfg = Release|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.All|x64.ActiveCfg = Release|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.All|x64.Build.0 = Release|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Debug|Win32.Build.0 = Debug|Win32
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Debug|x64.ActiveCfg = Debug|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Debug|x64.Build.0 = Debug|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Release|Win32.ActiveCfg = Release|Win32
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Release|Win32.Build.0 = Release|Win32
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Release|x64.ActiveCfg = Release|x64
-		{0E57878B-8F3D-4121-B720-17EF64D44471}.Release|x64.Build.0 = Release|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.All|Win32.ActiveCfg = All|Win32
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.All|Win32.Build.0 = All|Win32
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.All|x64.ActiveCfg = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.All|x64.Build.0 = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Debug|Win32.ActiveCfg = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Debug|x64.ActiveCfg = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Debug|x64.Build.0 = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Release|Win32.ActiveCfg = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Release|x64.ActiveCfg = All|x64
-		{4D837F81-114B-4BD4-B2CC-906F36D489C4}.Release|x64.Build.0 = All|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
