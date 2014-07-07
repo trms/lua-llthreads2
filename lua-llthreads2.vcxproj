@@ -148,6 +148,7 @@
     <ClInclude Include="src\l52util.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="lua-llthreads.autopkg" />
     <None Include="packages.config" />
     <None Include="src\copy.inc" />
     <None Include="src\traceback.inc" />
