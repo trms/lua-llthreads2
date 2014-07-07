@@ -20,7 +20,7 @@ nuget {
         packages : {
             // This is a list of other NuGet packages required to use this package.
             // Each item follows the format "<pkg_name>/<version>"
-            lua/"[5.3, 5.4)"
+            lua/"[5.3.0003.02, 5.4)"
         };
     };
 
