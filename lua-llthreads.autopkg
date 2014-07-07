@@ -2,7 +2,7 @@ nuget {
 	nuspec {
 		id = llthreads2;
 		title: "llthreads2";
-		version: 0.1.1.4;
+		version: 0.1.1.5;
 		authors: {coapp, Andrew Starks, Christian Bechette, Tightrope Media Systems};
 		owners: {Tightrope Media Systems};
 		licenseUrl: "http://opensource.org/licenses/MIT";
